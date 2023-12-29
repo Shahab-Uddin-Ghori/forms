@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahab-Uddin-Ghori</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <b id="h1text">Tuition Free Education Program on Latest Technologies</b>
+        <a href="" class="nav-bar1">Home</a>
+        <a href="" class="nav-bar2">Apply</a>
+        <a href="" class="nav-bar3">Jobs</a>
+        <a href="" class="nav-bar4">Results</a>
+        <label for="Courses" class="courses"
+          >Courses &nbsp;&nbsp;
+          <select name="Courses" id="Courses" required>
+            <option value="" checked="checked"></option>
+            <option value="Web and Mobile App">Web and Mobile App</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Amzazon">Amzazon</option>
+            <option value="Web 3.0">Web 3.0</option>
+            <option value="Ai chat bot">Ai chat bot</option>
+          </select>
+        </label>
+      </h1>
+    </header>
+    <main>
+      <div class="form-boder">
+        <form action="./form.php" method="get">
+          <h2>Student Course Registration Form</h2>
+          <p class="para">
+            Already applied?&nbsp;<a href="" id="admit-card">Get Admit Card</a>
+          </p>
+
+          <!-- profile pic type file -->
+          <label for="profilePic" class="profile">Select Profile Picture</label>
+          <input
+            type="file"
+            id="profilePic"
+            name="profilePic"
+            accept="image/*"
+          />
+
+          <!-- fullname -->
+          <label for="fullname">
+            <p class="formpara">Full Name*</p>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              required
+              maxlength="25"
+              placeholder="&nbsp;&nbsp;Full Name "
+              class="fullname"
+            />
+          </label>
+
+          <!-- father Name -->
+          <label for="father-name">
+            <p class="formpara">Father's Full Name*</p>
+            <input
+              type="text"
+              name="father-name"
+              id="father-name"
+              required
+              maxlength="25"
+              placeholder="Father Full Name"
+              class="father-name"
+            />
+          </label>
+
+          <!-- cninc -->
+          <label for="cnic">
+            <p class="formpara">CNIC Number or B-Form*</p>
+            <input
+              type="number"
+              name="cnic"
+              id="cnic"
+              required
+              maxlength="25"
+              placeholder="CNIC or B-Form"
+              class="cnic"
+            />
+          </label>
+
+          <!-- Mobile -->
+          <label for="Mobile">
+            <p class="formpara">Phone Number*</p>
+            <select
+              name="country-code"
+              id="country-code"
+              class="phone"
+              class="dropdown"
+            >
+              <option value="+92" checked="checked">+92</option>
+              <option value="+92" checked="checked">+91</option>
+              <option value="+92" checked="checked">+93</option>
+              <option value="+92" checked="checked">+94</option>
+              <option value="+92" checked="checked">+95</option>
+              <option value="+92" checked="checked">+96</option>
+              <input
+                type="tel"
+                name="Mobile"
+                id="Mobile"
+                required
+                maxlength="10"
+                placeholder="Phone Number"
+                class="number"
+              />
+            </select>
+
+            <!-- city -->
+          </label>
+          <label for="city">
+            <p class="formpara">City*</p>
+            <select name="city" id="city" class="city">
+              <option value="Karachi" checked="checked">Karachi</option>
+              <option value="Islamabad">Islamabad</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Peshawar">Peshawar</option>
+              <option value="Multan">Multan</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Rawaloindi">Rawaloindi</option>
+            </select>
+          </label>
+
+          <!-- email -->
+          <label for="email">
+            <p class="formpara">Email*</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              maxlength="50"
+              placeholder="&nbsp;&nbsp;Email Address"
+              class="email"
+            />
+          </label>
+
+          <!-- date of Birth -->
+          <label for="date-of-birth">
+            <p class="formpara">Date of Birth*</p>
+            <input
+              type="date"
+              name="date-of-birth"
+              id="date-of-birth"
+              required
+              class="dob"
+            />
+          </label>
+
+          <!-- degree -->
+          <label for="degree">
+            <p class="formpara">Higher Qualification*</p>
+            <select name="degree" id="degree" class="degree">
+              <option value=""></option>
+              <option value="Matriculation">Matriculation</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Graduation">Graduation</option>
+              <option value="Masters">Masters</option>
+            </select>
+          </label>
+
+          <!-- Gender -->
+          <p class="formpara">Gender*</p>
+          <label for="Male">
+            <input type="radio" name="Gender" id="Male" />Male*
+          </label>
+          <label for="Female">
+            <input type="radio" name="Gender" id="Female" />Female*
+          </label>
+
+          <br /><br />
+
+          <!-- button -->
+          <button class="button" type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <br>
+    <br>
+    <footer>
+        <p class="footer">
+        <b>Shahab Uddin Ghori</b>&nbsp;&nbsp;   
+        Roll.no WMA_172909 &nbsp;<sub>For my github
+        <a href="https://www.github.com/Shahab-Uddin-Ghori" id="github">&nbsp;Click Here!</a></sub>
+    </p>
+    </footer>
+  </body>
+</html>
