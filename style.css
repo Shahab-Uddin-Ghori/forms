@@ -1,180 +1,164 @@
+/* Global Styles */
 body {
   background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Nav Bar Code */
-h1 {
+/* Header Styles */
+header {
   background-color: #044e83;
-  height: 80px;
-  margin-top: -0.52%;
-  margin-left: -0.52%;
-  margin-right: -0.52%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-#h1text {
   color: #b9d8f3;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  text-shadow: (1, 1, 1, 1);
-  margin: auto;
-  margin-left: 18%;
-}
-.nav-bar,
-.nav-bar1,
-.nav-bar2,
-.nav-bar3,
-.nav-bar4,
-.courses {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #faf9f6;
-  font-style: normal;
-  text-decoration: none;
-  display: flex;
-  margin-left: 15px;
-}
-
-.nav-bar1 {
-  margin-left: 0;
-}
-
-.courses {
-  margin-right: 10px;
-}
-/* FORM CODE */
-.form-boder {
-  width: 37%;
+  padding: 0px ;
   text-align: center;
-  border: 2px solid;
+  display: flex;
+}
+
+.container {
+  max-width: 500px;
   margin: 0 auto;
-  margin-top: -1.45%;
-  border-style: none;
-  background-color: #ffff;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  margin: left;
+}
+
+.nav-bar,
+.courses {
+  color: #faf9f6;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Form boder */
+.form-border {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  border: 2px solid #e3e4e4;
   border-radius: 15px;
-  border-top-left-radius: 0%;
-  border-top-right-radius: 0%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 0px;
 }
 
 h2 {
   color: #044e83;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  text-shadow: (1, 1, 1, 1);
-  margin: auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.fullname,
-.father-name,
-.cnic,
-.city,
-.email,
-.dob,
-.degree {
-  width: 500px;
-  height: 25px;
-  border-style: groove;
-  border-color: #e3e4e4;
+/* Input Styles */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select {
+  width: calc(100% - 10px);
+  height: 35px;
+  border: 1px solid #e3e4e4;
   border-radius: 4px;
-  text-shadow: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
   background-color: #f3f4f6;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
-.number {
-  width: 440px;
-  height: 24.4px;
-  border-style: groove;
-  border-color: #e3e4e4;
+.mnumber {
+  width: calc(100% - 10px);
+  height: 35px;
+  border: 1px solid #e3e4e4;
   border-radius: 4px;
-  text-shadow: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
   background-color: #f3f4f6;
-  border-top-left-radius: 0%;
-  border-bottom-left-radius: 0%;
+  box-sizing: border-box;
 }
-.phone {
-  width: 60px;
-  height: 29px;
-  border-style: groove;
-  border-color: #c4c4c4;
-  border-top-right-radius: 0%;
-  border-bottom-right-radius: 0%;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-style: 1.6px groove;
-  text-shadow: rgba(0, 0, 0, 0.5);
-  background-color: #f3f4f6;
-}
-.formpara {
-  text-align: left;
-  margin-left: 5%;
-  position: relative;
-  top: 9px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.button {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 100%;
-  font-size: medium;
-  font-weight: 400;
-  background-color: #3498db;
-  color: #ffff;
-  border: none;
-  height: 29px;
-}
-.button:hover {
-  background-color: #044e83;
-  cursor: pointer;
-}
-#profilePic {
+input[type="file"] {
   display: none;
 }
 
-.profile {
+input[type="file"] + label {
+  display: block;
   padding: 10px;
   background-color: #3498db;
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.profile:hover {
+/* Button */
+.button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
   background-color: #044e83;
 }
-#admit-card {
-  text-decoration: none;
-  color: #3498db;
-  font-weight: 400;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.para {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.footer {
+
+/* Footer  */
+footer {
   text-align: center;
   background-color: #044e83;
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
+  padding: 10px;
 }
-#github{
-    text-decoration: none;
-    color: #9acff3;
+#Courses {
+  width: 1px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #044e83;
+  border: none;
+  cursor: pointer;
+}
+.para {
+  text-align: center;
+}
+.profile {
+  margin-left: 30%;
+  text-align: center;
+  color: #044e83;
+  font-size: larger;
+  font-size: 400;
+}
+.profile:hover {
+  cursor: pointer;
+}
+#github {
+  color: #a8d6ff;
+  font-size: large;
+  text-decoration: none;
+}
+#admit-card {
+  font-size: large;
+  text-decoration: none;
+  color: #044e83;
+  font-weight: 500;
+}
+#h1text{
+    display: flex;
 }
