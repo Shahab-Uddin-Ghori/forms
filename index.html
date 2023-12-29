@@ -4,64 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shahab-Uddin-Ghori</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
+    <!--opening header -->
     <header>
-      <h1>
-        <b id="h1text">Tuition Free Education Program on Latest Technologies</b>
-        <a href="" class="nav-bar1">Home</a>
-        <a href="" class="nav-bar2">Apply</a>
-        <a href="" class="nav-bar3">Jobs</a>
-        <a href="" class="nav-bar4">Results</a>
-        <label for="Courses" class="courses"
-          >Courses &nbsp;&nbsp;
-          <select name="Courses" id="Courses" required>
-            <option value="" checked="checked"></option>
-            <option value="Web and Mobile App">Web and Mobile App</option>
-            <option value="Graphic Design">Graphic Design</option>
-            <option value="Amzazon">Amzazon</option>
-            <option value="Web 3.0">Web 3.0</option>
-            <option value="Ai chat bot">Ai chat bot</option>
-          </select>
-        </label>
-      </h1>
+      <div class="container">
+        <!-- This is the header container for Nab Bar -->
+        <h1>
+          <b id="h1text"
+            >Tuition Free Education Program on Latest Technologies</b
+          >
+          <a href="#" class="nav-bar">Home</a>
+          <a href="#" class="nav-bar">Apply</a>
+          <a href="#" class="nav-bar">Jobs</a>
+          <a href="#" class="nav-bar">Results</a>
+          <label for="Courses" class="courses">
+            Courses
+            <select name="Courses" id="Courses" required>
+              <option value="" checked="checked"></option>
+              <option value="Web and Mobile App">Web and Mobile App</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="Amazon">Amazon</option>
+              <option value="Web 3.0">Web 3.0</option>
+              <option value="AI Chat Bot">AI Chat Bot</option>
+            </select>
+          </label>
+        </h1>
+      </div>
+      <!-- the closing of header container -->
     </header>
+    <!-- closing header -->
+
+    <!-- main part of body -->
     <main>
-      <div class="form-boder">
+      <!-- this is the main Div of form border -->
+      <div class="form-border">
         <form action="./form.php" method="get">
           <h2>Student Course Registration Form</h2>
           <p class="para">
-            Already applied?&nbsp;<a href="" id="admit-card">Get Admit Card</a>
+            Already applied?&nbsp;<a href="#" id="admit-card">Get Admit Card</a>
           </p>
 
-          <!-- profile pic type file -->
-          <label for="profilePic" class="profile">Select Profile Picture</label>
-          <input
-            type="file"
-            id="profilePic"
-            name="profilePic"
-            accept="image/*"
-          />
+          <!-- profile pic div -->
+          <div class="input-group">
+            <label for="profilePic" class="profile"
+              >Select Profile Picture</label
+            >
+            <input
+              type="file"
+              id="profilePic"
+              name="profilePic"
+              accept="image/*"
+            />
+          </div>
 
-          <!-- fullname -->
-          <label for="fullname">
-            <p class="formpara">Full Name*</p>
+          <!-- full name div -->
+
+          <div class="input-group">
+            <label for="fullname">Full Name*</label>
             <input
               type="text"
               name="fullname"
               id="fullname"
               required
               maxlength="25"
-              placeholder="&nbsp;&nbsp;Full Name "
+              placeholder="Full Name"
               class="fullname"
             />
-          </label>
+          </div>
 
-          <!-- father Name -->
-          <label for="father-name">
-            <p class="formpara">Father's Full Name*</p>
+          <!-- Father's Name  div-->
+          <div class="input-group">
+            <label for="father-name">Father's Full Name*</label>
             <input
               type="text"
               name="father-name"
@@ -71,11 +87,11 @@
               placeholder="Father Full Name"
               class="father-name"
             />
-          </label>
+          </div>
 
-          <!-- cninc -->
-          <label for="cnic">
-            <p class="formpara">CNIC Number or B-Form*</p>
+          <!-- CNIC -->
+          <div class="input-group">
+            <label for="cnic">CNIC Number or B-Form*</label>
             <input
               type="number"
               name="cnic"
@@ -85,66 +101,81 @@
               placeholder="CNIC or B-Form"
               class="cnic"
             />
-          </label>
+          </div>
 
-          <!-- Mobile -->
-          <label for="Mobile">
-            <p class="formpara">Phone Number*</p>
+          <!-- Mobile Number Country Code -->
+          <div class="input-group">
+            <label for="Mobile">Phone Number*</label>
             <select
               name="country-code"
               id="country-code"
               class="phone"
               class="dropdown"
             >
-              <option value="+92" checked="checked">+92</option>
-              <option value="+92" checked="checked">+91</option>
-              <option value="+92" checked="checked">+93</option>
-              <option value="+92" checked="checked">+94</option>
-              <option value="+92" checked="checked">+95</option>
-              <option value="+92" checked="checked">+96</option>
-              <input
-                type="tel"
-                name="Mobile"
-                id="Mobile"
-                required
-                maxlength="10"
-                placeholder="Phone Number"
-                class="number"
-              />
+              <option value="#"></option>
+              <option value="+92">Pakistan (+92)</option>
+              <option value="+93">Afghanistan (+93)</option>
+              <option value="+91">India (+91)</option>
+              <option value="+95">Myanmar (+95)</option>
+              <option value="+81">Japan (+81)</option>
+              <option value="+86">China (+86)</option>
+              <option value="+65">Singapore (+65)</option>
+              <option value="+880">Bangladesh (+880)</option>
+              <option value="+977">Nepal (+977)</option>
+              <option value="+94">Sri Lanka (+94)</option>
+              <option value="+62">Indonesia (+62)</option>
+              <option value="+66">Thailand (+66)</option>
+              <option value="+84">Vietnam (+84)</option>
+              <option value="+965">Kuwait (+965)</option>
+              <option value="+966">Saudi Arabia (+966)</option>
+              <option value="+971">United Arab Emirates (+971)</option>
+              <option value="+965">Kuwait (+965)</option>
             </select>
-
-            <!-- city -->
-          </label>
-          <label for="city">
-            <p class="formpara">City*</p>
+            <!-- mobile num -->
+            <input
+              type="tel"
+              name="Mobile"
+              id="Mobile"
+              required
+              maxlength="10"
+              placeholder="Phone Number"
+              class="mnumber"
+            />
+          </div>
+          <!-- City -->
+          <div class="input-group">
+            <label for="city">City*</label>
             <select name="city" id="city" class="city">
               <option value="Karachi" checked="checked">Karachi</option>
-              <option value="Islamabad">Islamabad</option>
               <option value="Lahore">Lahore</option>
-              <option value="Peshawar">Peshawar</option>
+              <option value="Islamabad">Islamabad</option>
+              <option value="Faisalabad">Faisalabad</option>
+              <option value="Rawalpindi">Rawalpindi</option>
               <option value="Multan">Multan</option>
-              <option value="Hyderabad">Hyderabad</option>
-              <option value="Rawaloindi">Rawaloindi</option>
+              <option value="Gujranwala">Gujranwala</option>
+              <option value="Peshawar">Peshawar</option>
+              <option value="Quetta">Quetta</option>
+              <option value="Sialkot">Sialkot</option>
             </select>
-          </label>
+          </div>
 
-          <!-- email -->
-          <label for="email">
-            <p class="formpara">Email*</p>
+          <!-- Email -->
+          <div class="input-group">
+            <label for="email">Email*</label>
             <input
               type="email"
               name="email"
               id="email"
               required
               maxlength="50"
-              placeholder="&nbsp;&nbsp;Email Address"
+              placeholder="Email Address"
               class="email"
             />
-          </label>
+          </div>
 
-          <!-- date of Birth -->
-          <label for="date-of-birth">
-            <p class="formpara">Date of Birth*</p>
+          <!-- Date of Birth -->
+          <div class="input-group">
+            <label for="date-of-birth">Date of Birth*</label>
             <input
               type="date"
               name="date-of-birth"
@@ -152,44 +183,57 @@
               required
               class="dob"
             />
-          </label>
+          </div>
 
-          <!-- degree -->
-          <label for="degree">
-            <p class="formpara">Higher Qualification*</p>
+          <!-- Degree -->
+          <div class="input-group">
+            <label for="degree">Higher Qualification*</label>
             <select name="degree" id="degree" class="degree">
-              <option value=""></option>
+              <option value="#"></option>
               <option value="Matriculation">Matriculation</option>
               <option value="Intermediate">Intermediate</option>
-              <option value="Graduation">Graduation</option>
-              <option value="Masters">Masters</option>
+              <option value="Bachelor's Degree">Bachelor's Degree</option>
+              <option value="Master's Degree">Master's Degree</option>
+              <option value="Ph.D.">Ph.D.</option>
+              <option value="Diploma">Diploma</option>
+              <option value="Vocational">Vocational</option>
+              <option value="Certificate Course">Certificate Course</option>
+              <option value="Other">Other</option>
             </select>
-          </label>
+          </div>
 
           <!-- Gender -->
-          <p class="formpara">Gender*</p>
-          <label for="Male">
-            <input type="radio" name="Gender" id="Male" />Male*
-          </label>
-          <label for="Female">
-            <input type="radio" name="Gender" id="Female" />Female*
-          </label>
+          <div class="input-group">
+            <p>Gender*</p>
+            <label for="Male">
+              <input type="radio" name="Gender" id="Male" />Male*
+            </label>
+            <label for="Female">
+              <input type="radio" name="Gender" id="Female" />Female*
+            </label>
+          </div>
 
           <br /><br />
 
-          <!-- button -->
+          <!-- Submit Button -->
           <button class="button" type="submit" id="submit">Submit</button>
         </form>
       </div>
     </main>
-    <br>
-    <br>
+
+    <br />
+    <br />
+
     <footer>
-        <p class="footer">
-        <b>Shahab Uddin Ghori</b>&nbsp;&nbsp;   
-        Roll.no WMA_172909 &nbsp;<sub>For my github
-        <a href="https://www.github.com/Shahab-Uddin-Ghori" id="github">&nbsp;Click Here!</a></sub>
-    </p>
+      <p class="footer">
+        <b>Shahab Uddin Ghori</b>&nbsp;&nbsp; Roll.no WMA_172909 &nbsp;
+        <sub
+          >For my GitHub
+          <a href="https://www.github.com/Shahab-Uddin-Ghori" id="github"
+            >&nbsp;Click Here!</a
+          >
+        </sub>
+      </p>
     </footer>
   </body>
 </html>
